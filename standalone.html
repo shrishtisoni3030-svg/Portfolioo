@@ -1,0 +1,2021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shrishti Soni — AI, Business Research & Interactive Technology</title>
+  <meta name="description" content="Personal portfolio of Shrishti Soni. Bold minimalist editorial aesthetic exploring AI research, business strategy, gaming concepts, and spatial computing.">
+  <meta name="keywords" content="Shrishti Soni, AI Research, Business Strategy, Product Research, Gaming, AR VR, Kolkata">
+  <meta name="author" content="Shrishti Soni">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shrishti Soni — AI, Business Research & Interactive Technology">
+  <meta property="og:description" content="Curious about technology. Driven by research. Interested in what businesses can build next.">
+  <meta property="og:image" content="assets/profile.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Custom Design System -->
+  <style>
+/* ==========================================================================
+   Shrishti Soni Portfolio - Bold Minimalist Typography & Modern SaaS Aesthetic
+   Swiss / Neo-Brutalist Layout, Kinetic Typography, Warm Gradient Accents
+   ========================================================================== */
+
+:root {
+  --bg-primary: #000000;
+  --bg-secondary: #0A0A0A;
+  --bg-card: #0F0F0F;
+  --bg-card-hover: #161616;
+  
+  --text-primary: #FFFFFF;
+  --text-secondary: #A1A1AA;
+  --text-muted: #52525B;
+  
+  /* Vibrant Warm Orange-to-Yellow Gradient */
+  --gradient-warm: linear-gradient(135deg, #FF4500 0%, #FF8C00 50%, #FFC107 100%);
+  --gradient-warm-hover: linear-gradient(135deg, #FF5722 0%, #FFA000 50%, #FFD54F 100%);
+  --warm-accent: #FF6B00;
+  --warm-glow: rgba(255, 107, 0, 0.25);
+  
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --border-strong: rgba(255, 255, 255, 0.2);
+  --border-active: #FFFFFF;
+  
+  --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+}
+
+/* Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+/* Custom Selection */
+::selection {
+  background-color: #FF5500;
+  color: #FFFFFF;
+}
+
+/* Minimal Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3F3F46;
+}
+
+/* Typography Hierarchy */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Massive Swiss Typography Headings */
+.title-giant {
+  font-size: clamp(2.75rem, 8vw, 6.5rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.title-section {
+  font-size: clamp(2.25rem, 5vw, 4.25rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
+
+.title-card {
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+/* Signature Warm Gradient Highlight */
+.gradient-warm-text {
+  background: var(--gradient-warm);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.gradient-warm-text-hover:hover {
+  background: var(--gradient-warm-hover);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Monospace Micro Labels (Swiss Editorial) */
+.label-mono {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Stark High-Contrast Buttons */
+.btn-solid-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: #FFFFFF;
+  color: #000000;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: -0.01em;
+  padding: 0.875rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #FFFFFF;
+}
+
+.btn-solid-white:hover {
+  background: #E4E4E7;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(255, 255, 255, 0.3);
+}
+
+.btn-outline-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: #FFFFFF;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.875rem 1.75rem;
+  border-radius: 9999px;
+  border: 1px solid var(--border-strong);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-outline-white:hover {
+  border-color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Minimalist Editorial Card */
+.editorial-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 0.75rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-card:hover {
+  background: var(--bg-card-hover);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Kinetic Marquee Ticker */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 1.25rem 0;
+  background: #050505;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-right: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.marquee-item .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--warm-accent);
+}
+
+/* Navigation */
+.header-glass {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+/* Modals */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-container {
+  background: #0A0A0A;
+  border: 1px solid var(--border-strong);
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 820px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.95), 0 0 40px rgba(255, 107, 0, 0.08);
+  transform: scale(0.96);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-overlay.active .modal-container {
+  transform: scale(1);
+}
+
+/* Video Box */
+.video-responsive-box {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  background: #000000;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+}
+
+.video-responsive-box iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Minimalist Filter Tabs */
+.filter-pill {
+  padding: 0.45rem 1.15rem;
+  border-radius: 9999px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-pill:hover {
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.filter-pill.active {
+  color: #000000;
+  background: #FFFFFF;
+  border-color: #FFFFFF;
+  font-weight: 700;
+}
+
+/* Toast Notification */
+.toast-notice {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #0F0F0F;
+  border: 1px solid var(--border-strong);
+  color: #FFFFFF;
+  padding: 0.85rem 1.5rem;
+  border-radius: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  z-index: 200;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.toast-notice.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Swiss Grid Lines */
+.grid-hairline-bottom {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.grid-hairline-top {
+  border-top: 1px solid var(--border-subtle);
+}
+
+</style>
+</head>
+<body class="bg-[#000000] text-[#FFFFFF] antialiased min-h-screen font-display selection:bg-[#FF4500] selection:text-white">
+
+  <!-- Fixed Minimalist Header -->
+  <header class="fixed top-0 left-0 w-full z-50 header-glass">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 h-24 flex items-center justify-between">
+      
+      <!-- Brand Monogram -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <span class="font-extrabold text-xl tracking-tighter text-white group-hover:text-[#FF8C00] transition-colors">
+          SHRISHTI SONI
+        </span>
+        <span class="label-mono text-[10px] hidden sm:inline-block">[ RESEARCH & STRATEGY ]</span>
+      </a>
+
+      <!-- Desktop Minimalist Navigation -->
+      <nav class="hidden md:flex items-center gap-8 font-mono text-xs tracking-wider uppercase">
+        <a href="#about" class="text-white/60 hover:text-white transition-colors">About</a>
+        <a href="#expertise" class="text-white/60 hover:text-white transition-colors">Expertise</a>
+        <a href="#projects" class="text-white/60 hover:text-white transition-colors">Work</a>
+        <a href="#gaming" class="text-white/60 hover:text-white transition-colors">Gaming & XR</a>
+        <a href="#approach" class="text-white/60 hover:text-white transition-colors">Approach</a>
+        <a href="#contact" class="btn-solid-white py-2 px-5 text-xs">
+          Let's Talk →
+        </a>
+      </nav>
+
+      <!-- Mobile Toggle -->
+      <button id="mobileMenuToggle" class="md:hidden text-white/80 hover:text-white p-2" aria-label="Toggle Navigation">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#0A0A0A] border-b border-white/10 px-8 py-6 space-y-4 font-mono text-xs uppercase tracking-wider">
+      <a href="#about" class="block text-white/70 hover:text-white">About</a>
+      <a href="#expertise" class="block text-white/70 hover:text-white">Expertise</a>
+      <a href="#projects" class="block text-white/70 hover:text-white">Selected Work</a>
+      <a href="#gaming" class="block text-white/70 hover:text-white">Gaming & Interactive Tech</a>
+      <a href="#approach" class="block text-white/70 hover:text-white">Approach</a>
+      <a href="#contact" class="block text-[#FF8C00] font-bold">Contact & Inquiries</a>
+    </div>
+  </header>
+
+  <!-- Hero Section: Oversized Swiss Typography -->
+  <section id="hero" class="pt-40 pb-20 sm:pt-48 sm:pb-32 px-6 sm:px-10 max-w-7xl mx-auto">
+    <div class="space-y-8">
+      
+      <!-- Top Meta Line -->
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-6">
+        <div class="flex items-center gap-3">
+          <span class="w-2 h-2 rounded-full bg-[#FF8C00] animate-pulse"></span>
+          <span class="label-mono text-white/80">KOLKATA, INDIA • AVAILABLE FOR FREELANCE & COLLABORATIONS</span>
+        </div>
+        <span class="label-mono text-white/40">[ 2026 EDITION ]</span>
+      </div>
+
+      <!-- Giant Bold Headline with Warm Gradient Highlight -->
+      <div class="py-4">
+        <h1 class="title-giant text-white">
+          CURIOUS ABOUT TECHNOLOGY.<br>
+          DRIVEN BY <span class="gradient-warm-text">RESEARCH.</span>
+        </h1>
+      </div>
+
+      <!-- High-Impact Concise Lead & Actions -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end pt-4">
+        
+        <div class="lg:col-span-7 space-y-4">
+          <p class="font-mono text-xs uppercase tracking-widest text-[#FF8C00]">
+            // AI, BUSINESS RESEARCH & INTERACTIVE TECHNOLOGY
+          </p>
+          <p id="heroLead" class="text-lg sm:text-xl text-white/70 leading-relaxed font-normal max-w-2xl">
+            Exploring the intersection of AI, business strategy, and interactive worlds. I turn scattered signals and emerging technologies into structured insights and practical recommendations.
+          </p>
+        </div>
+
+        <div class="lg:col-span-5 flex flex-wrap items-center gap-4 lg:justify-end">
+          <a href="#projects" class="btn-solid-white">
+            VIEW SELECTED WORK ↓
+          </a>
+          <a href="#contact" class="btn-outline-white">
+            GET IN TOUCH →
+          </a>
+          <a href="https://www.linkedin.com/in/shrishtisonii/" target="_blank" rel="noopener noreferrer" class="p-3.5 rounded-full border border-white/20 hover:border-white text-white/70 hover:text-white transition-colors" title="LinkedIn Profile">
+            <i data-lucide="linkedin" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Kinetic Typography Marquee Ticker -->
+  <div class="marquee-container">
+    <div class="marquee-content">
+      <span class="marquee-item">AI & MARKET RESEARCH <span class="dot"></span></span>
+      <span class="marquee-item">PRODUCT STRATEGY <span class="dot"></span></span>
+      <span class="marquee-item">GAMING INDUSTRY EXPOSURE <span class="dot"></span></span>
+      <span class="marquee-item">SPATIAL COMPUTING & AR/VR <span class="dot"></span></span>
+      <span class="marquee-item">COMPETITOR INTELLIGENCE <span class="dot"></span></span>
+      <span class="marquee-item">WORKFLOW AUTOMATION <span class="dot"></span></span>
+      <span class="marquee-item">PRD & REQUIREMENTS <span class="dot"></span></span>
+      <span class="marquee-item">MONETISATION MODELS <span class="dot"></span></span>
+    </div>
+    <div class="marquee-content" aria-hidden="true">
+      <span class="marquee-item">AI & MARKET RESEARCH <span class="dot"></span></span>
+      <span class="marquee-item">PRODUCT STRATEGY <span class="dot"></span></span>
+      <span class="marquee-item">GAMING INDUSTRY EXPOSURE <span class="dot"></span></span>
+      <span class="marquee-item">SPATIAL COMPUTING & AR/VR <span class="dot"></span></span>
+      <span class="marquee-item">COMPETITOR INTELLIGENCE <span class="dot"></span></span>
+      <span class="marquee-item">WORKFLOW AUTOMATION <span class="dot"></span></span>
+      <span class="marquee-item">PRD & REQUIREMENTS <span class="dot"></span></span>
+      <span class="marquee-item">MONETISATION MODELS <span class="dot"></span></span>
+    </div>
+  </div>
+
+  <!-- About Section: Swiss Editorial Grid -->
+  <section id="about" class="py-28 sm:py-36 px-6 sm:px-10 max-w-7xl mx-auto grid-hairline-bottom">
+    <div class="space-y-12">
+      
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <span class="label-mono">[ 01 / PERSPECTIVE ]</span>
+        <span class="label-mono">HOW I THINK</span>
+      </div>
+
+      <div class="max-w-4xl">
+        <h2 class="title-section text-white">
+          A LITTLE ABOUT HOW I <span class="gradient-warm-text">THINK.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 sm:gap-16 pt-4">
+        
+        <!-- Left: Editorial Narrative -->
+        <div id="aboutNarrative" class="lg:col-span-7 space-y-6">
+          <!-- Populated from data.js -->
+        </div>
+
+        <!-- Right: 3 Core Principles -->
+        <div class="lg:col-span-5 flex flex-col justify-center">
+          <div id="aboutPillars" class="space-y-4">
+            <!-- Populated from data.js -->
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Areas of Expertise Section -->
+  <section id="expertise" class="py-28 sm:py-36 px-6 sm:px-10 max-w-7xl mx-auto grid-hairline-bottom">
+    <div class="space-y-12">
+      
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <span class="label-mono">[ 02 / CAPABILITIES ]</span>
+        <span class="label-mono">FOUR CORE PILLARS</span>
+      </div>
+
+      <div class="max-w-4xl">
+        <h2 class="title-section text-white">
+          AREAS OF <span class="gradient-warm-text">EXPERTISE.</span>
+        </h2>
+        <p class="text-white/60 text-base sm:text-lg mt-4 max-w-2xl font-normal">
+          Connecting analytical business inquiry with modern interactive media and emerging computing paradigms.
+        </p>
+      </div>
+
+      <!-- 4 High-Contrast Editorial Cards -->
+      <div id="expertiseGrid" class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 pt-4">
+        <!-- Rendered dynamically -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Selected Work (Case Studies) -->
+  <section id="projects" class="py-28 sm:py-36 px-6 sm:px-10 max-w-7xl mx-auto grid-hairline-bottom">
+    <div class="space-y-12">
+      
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <span class="label-mono">[ 03 / CASE STUDIES ]</span>
+        <span class="label-mono">BUSINESS & AI INITIATIVES</span>
+      </div>
+
+      <div class="max-w-4xl">
+        <h2 class="title-section text-white">
+          SELECTED <span class="gradient-warm-text">WORK.</span>
+        </h2>
+        <p class="text-white/60 text-base sm:text-lg mt-4 max-w-2xl font-normal">
+          Strategic research, product blueprinting, and workflow architecture supported across AI and enterprise technology.
+        </p>
+      </div>
+
+      <!-- Projects Grid -->
+      <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 pt-4">
+        <!-- Rendered dynamically -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Gaming & Interactive Technology -->
+  <section id="gaming" class="py-28 sm:py-36 px-6 sm:px-10 max-w-7xl mx-auto grid-hairline-bottom">
+    <div class="space-y-12">
+      
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <span class="label-mono">[ 04 / INTERACTIVE WORLDS ]</span>
+        <span class="label-mono">GAMING, SPATIAL & VIDEO</span>
+      </div>
+
+      <div class="max-w-4xl">
+        <h2 class="title-section text-white">
+          BEYOND BUSINESS. INTO <span class="gradient-warm-text">INTERACTIVE</span> WORLDS.
+        </h2>
+        <p class="text-white/60 text-base sm:text-lg mt-4 max-w-2xl font-normal">
+          Gaming and spatial media represent the forefront of consumer digital engagement, interactive mechanics, and virtual economies.
+        </p>
+      </div>
+
+      <!-- Minimalist Category Filter Pills -->
+      <div class="flex flex-wrap gap-2 pt-2">
+        <button class="filter-pill active" data-category="all">All References</button>
+        <button class="filter-pill" data-category="interactive">Web & Platforms</button>
+        <button class="filter-pill" data-category="spatial">Spatial & AR/VR</button>
+        <button class="filter-pill" data-category="video">Video Showcase</button>
+        <button class="filter-pill" data-category="workshop">AI Workshop</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div id="gamingGalleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
+        <!-- Rendered dynamically -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Approach Section (5-Step Methodology) -->
+  <section id="approach" class="py-28 sm:py-36 px-6 sm:px-10 max-w-7xl mx-auto grid-hairline-bottom">
+    <div class="space-y-12">
+      
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <span class="label-mono">[ 05 / METHODOLOGY ]</span>
+        <span class="label-mono">FIVE PHASES</span>
+      </div>
+
+      <div class="max-w-4xl">
+        <h2 class="title-section text-white">
+          FROM QUESTIONS TO <span class="gradient-warm-text">CLARITY.</span>
+        </h2>
+        <p class="text-white/60 text-base sm:text-lg mt-4 max-w-2xl font-normal">
+          A disciplined research and structuring workflow that converts ambiguity into validated roadmaps.
+        </p>
+      </div>
+
+      <!-- 5 Stark Columns -->
+      <div id="approachSteps" class="grid grid-cols-1 md:grid-cols-5 gap-6 pt-4">
+        <!-- Rendered dynamically -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Tools & Systems Toolkit -->
+  <section class="py-24 px-6 sm:px-10 max-w-7xl mx-auto grid-hairline-bottom">
+    <div class="space-y-10">
+      
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <span class="label-mono">[ 06 / TOOLKIT ]</span>
+        <span class="label-mono">SYSTEMS & PLATFORMS</span>
+      </div>
+
+      <div class="max-w-4xl">
+        <h2 class="title-card text-white uppercase">
+          SYSTEMS I <span class="gradient-warm-text">EXPLORE.</span>
+        </h2>
+      </div>
+
+      <div id="toolsGrid" class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <!-- Rendered dynamically -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Collaborations Section -->
+  <section class="py-28 sm:py-36 px-6 sm:px-10 max-w-7xl mx-auto grid-hairline-bottom">
+    <div class="space-y-12">
+      
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <span class="label-mono">[ 07 / PARTNERSHIPS ]</span>
+        <span class="label-mono">COLLABORATIONS</span>
+      </div>
+
+      <div class="max-w-4xl">
+        <h2 class="title-section text-white">
+          GOOD IDEAS DESERVE GOOD <span class="gradient-warm-text">RESEARCH.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 pt-4">
+        
+        <div class="editorial-card p-8 sm:p-10">
+          <span class="label-mono text-[#FF8C00] block mb-4">[ TARGET PARTNERS ]</span>
+          <h3 class="text-xl sm:text-2xl font-extrabold text-white uppercase tracking-tight mb-6">Who I Collaborate With</h3>
+          <ul id="collabPartners" class="space-y-3">
+            <!-- Rendered dynamically -->
+          </ul>
+        </div>
+
+        <div class="editorial-card p-8 sm:p-10">
+          <span class="label-mono text-[#FF8C00] block mb-4">[ SUPPORT CAPABILITIES ]</span>
+          <h3 class="text-xl sm:text-2xl font-extrabold text-white uppercase tracking-tight mb-6">Areas of Support</h3>
+          <ul id="collabSupport" class="space-y-3">
+            <!-- Rendered dynamically -->
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-28 sm:py-36 px-6 sm:px-10 max-w-7xl mx-auto">
+    <div class="space-y-12">
+      
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <span class="label-mono">[ 08 / INQUIRIES ]</span>
+        <span class="label-mono">GET IN TOUCH</span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 sm:gap-16">
+        
+        <!-- Left: Big Typography Headline & Details -->
+        <div class="lg:col-span-5 space-y-8">
+          <h2 class="title-section text-white">
+            HAVE AN IDEA WORTH <span class="gradient-warm-text">EXPLORING?</span>
+          </h2>
+          
+          <p class="text-white/70 text-base leading-relaxed">
+            Open to freelance projects, research assignments, collaborations, and exploratory discussions across AI, business strategy, and interactive technology.
+          </p>
+
+          <div class="space-y-4 pt-4 border-t border-white/10">
+            <!-- Direct Email with Copy Button -->
+            <div class="p-4 rounded bg-[#0A0A0A] border border-white/10 flex items-center justify-between">
+              <div>
+                <span class="label-mono text-[10px] block">DIRECT EMAIL</span>
+                <a href="mailto:shrishtisoni3030@gmail.com" class="text-sm font-mono text-white hover:text-[#FF8C00]">shrishtisoni3030@gmail.com</a>
+              </div>
+              <button onclick="copyEmailToClipboard()" class="btn-outline-white text-xs py-1.5 px-3">
+                COPY EMAIL
+              </button>
+            </div>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/shrishtisonii/" target="_blank" rel="noopener noreferrer" class="p-4 rounded bg-[#0A0A0A] border border-white/10 flex items-center justify-between hover:border-white transition-colors group">
+              <div>
+                <span class="label-mono text-[10px] block">NETWORK</span>
+                <span class="text-sm font-mono text-white group-hover:text-[#FF8C00]">linkedin.com/in/shrishtisonii</span>
+              </div>
+              <span class="text-white font-mono text-xs">↗</span>
+            </a>
+
+            <!-- Location -->
+            <div class="p-4 rounded bg-[#0A0A0A] border border-white/10 flex items-center justify-between">
+              <div>
+                <span class="label-mono text-[10px] block">BASE LOCATION</span>
+                <span class="text-sm font-mono text-white">KOLKATA, INDIA</span>
+              </div>
+              <span class="text-white/40 font-mono text-xs">UTC+5:30</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Minimalist Stark Form -->
+        <div class="lg:col-span-7">
+          <div class="editorial-card p-8 sm:p-12">
+            <span class="label-mono text-[#FF8C00] block mb-2">[ INQUIRY FORM ]</span>
+            <h3 class="text-2xl font-extrabold text-white uppercase tracking-tight mb-8">SEND A DIRECT MESSAGE</h3>
+
+            <form id="contactForm" class="space-y-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label class="label-mono block mb-2">YOUR NAME *</label>
+                  <input 
+                    type="text" 
+                    name="name" 
+                    required 
+                    placeholder="Alex Morgan" 
+                    class="w-full px-4 py-3.5 bg-[#000000] border border-white/20 text-white placeholder-white/30 text-sm font-mono focus:outline-none focus:border-white transition-colors"
+                  />
+                </div>
+                <div>
+                  <label class="label-mono block mb-2">YOUR EMAIL *</label>
+                  <input 
+                    type="email" 
+                    name="email" 
+                    required 
+                    placeholder="alex@company.com" 
+                    class="w-full px-4 py-3.5 bg-[#000000] border border-white/20 text-white placeholder-white/30 text-sm font-mono focus:outline-none focus:border-white transition-colors"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="label-mono block mb-2">PROJECT / INQUIRY TYPE</label>
+                <select 
+                  name="projectType" 
+                  class="w-full px-4 py-3.5 bg-[#000000] border border-white/20 text-white text-sm font-mono focus:outline-none focus:border-white transition-colors">
+                  <option value="AI & Business Research">AI & Business Research</option>
+                  <option value="Product & Requirement Research">Product & Requirement Research</option>
+                  <option value="Gaming & Interactive Concept">Gaming & Interactive Concept</option>
+                  <option value="Competitor & Market Intelligence">Competitor & Market Intelligence</option>
+                  <option value="Freelance Assignment / Collaboration">Freelance Assignment / Collaboration</option>
+                  <option value="General Conversation">General Conversation</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="label-mono block mb-2">MESSAGE / BRIEF *</label>
+                <textarea 
+                  name="message" 
+                  rows="4" 
+                  required 
+                  placeholder="Share a brief overview of your business inquiry or project..." 
+                  class="w-full px-4 py-3.5 bg-[#000000] border border-white/20 text-white placeholder-white/30 text-sm font-mono focus:outline-none focus:border-white transition-colors"></textarea>
+              </div>
+
+              <div id="formStatus"></div>
+
+              <button type="submit" class="btn-solid-white w-full py-4 text-xs font-mono tracking-wider">
+                SUBMIT INQUIRY →
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Minimalist Swiss Footer -->
+  <footer class="py-12 border-t border-white/10 bg-[#050505]">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 flex flex-col sm:flex-row items-center justify-between gap-6 font-mono text-xs">
+      <div>
+        <span class="font-bold text-white uppercase tracking-tight">SHRISHTI SONI</span>
+        <span class="text-white/40 ml-2">// PORTFOLIO 2026</span>
+      </div>
+
+      <div class="flex items-center gap-6 text-white/60">
+        <a href="#hero" class="hover:text-white">TOP ↑</a>
+        <a href="https://www.linkedin.com/in/shrishtisonii/" target="_blank" rel="noopener noreferrer" class="hover:text-white">LINKEDIN</a>
+        <a href="mailto:shrishtisoni3030@gmail.com" class="hover:text-white">EMAIL</a>
+      </div>
+
+      <div class="text-white/40">
+        © 2026 ALL RIGHTS RESERVED.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Universal Modal Overlay -->
+  <div id="generalModal" class="modal-overlay" onclick="if(event.target === this) ModalManager.close()">
+    <div class="modal-container modal-content-slot"></div>
+  </div>
+
+
+  <script>
+  /**
+ * Shrishti Soni Portfolio - Structured Data Store
+ * All editable portfolio information, projects, media references, and copy.
+ */
+
+const PORTFOLIO_DATA = {
+  profile: {
+    name: "Shrishti Soni",
+    title: "AI, Business Research & Interactive Technology",
+    location: "Kolkata, India",
+    email: "shrishtisoni3030@gmail.com",
+    linkedin: "https://www.linkedin.com/in/shrishtisonii/",
+    availability: "Open to freelance projects, research assignments, collaborations and interesting opportunities.",
+    headline: "Curious about technology. Driven by research. Interested in what businesses can build next.",
+    supportingHeadline: "From researching business opportunities and exploring AI applications to understanding gaming and immersive digital experiences.",
+    heroLead: "I research business opportunities, explore AI applications and work around digital product ideas, gaming and immersive technology. I enjoy understanding how things work, identifying possibilities and turning ideas into structured insights.",
+    image: "assets/profile.png",
+    signature: "assets/signature.png"
+  },
+
+  about: {
+    sectionTitle: "A little about how I think.",
+    paragraphs: [
+      "I have always been interested in understanding how things work — whether it is a business model, a new technology, a digital product or a game.",
+      "My professional interests have taken me across different environments, including business operations, marketing, product-related work, AI applications and the gaming industry.",
+      "Over time, I have developed an interest in researching markets, understanding competitors, exploring product opportunities and identifying how technology can solve real-world problems.",
+      "I enjoy experimenting with AI tools, learning new technologies and connecting ideas across different industries.",
+      "For me, the interesting part is not just understanding technology, but figuring out where it creates value."
+    ],
+    pillars: [
+      {
+        title: "Analytical Inquiry",
+        desc: "Diving deep into market dynamics, competitive landscapes, and technological shifts to identify where genuine value can be unlocked.",
+        icon: "search"
+      },
+      {
+        title: "Cross-Industry Synthesis",
+        desc: "Connecting dots between enterprise business needs, cutting-edge AI utilities, and interactive entertainment paradigms.",
+        icon: "git-branch"
+      },
+      {
+        title: "Actionable Structure",
+        desc: "Translating ambiguous exploratory ideas and scattered data into structured documentation, clear presentations, and practical roadmaps.",
+        icon: "layout"
+      }
+    ]
+  },
+
+  expertise: [
+    {
+      id: "ai-business",
+      title: "AI & Business Research",
+      badge: "Market Intelligence",
+      description: "Understanding markets, identifying opportunities and exploring how AI can create value for businesses.",
+      icon: "cpu",
+      accent: "cyan",
+      areas: [
+        "Market and industry research",
+        "Market opportunity identification",
+        "Competitor intelligence",
+        "Customer and audience research",
+        "Business trend analysis",
+        "AI applications in business",
+        "AI tool research and comparison",
+        "Business opportunity analysis"
+      ],
+      detail: "Focused on bridging the gap between emerging AI tools and practical business value. This includes systematic market mapping, studying competitor offerings, identifying underserved gaps, evaluating specific AI platforms, and providing strategic briefs that enable decision-makers to move forward with confidence."
+    },
+    {
+      id: "product-research",
+      title: "Business & Product Research",
+      badge: "Product Strategy",
+      description: "Helping transform early ideas and business questions into structured product and business recommendations.",
+      icon: "briefcase",
+      accent: "violet",
+      areas: [
+        "Product idea research",
+        "Idea validation",
+        "Product positioning",
+        "Feature research",
+        "Product requirement documentation",
+        "Product overviews",
+        "Business model research",
+        "Revenue model exploration",
+        "Pricing and monetisation research",
+        "Proposals and presentations"
+      ],
+      detail: "Assisting teams from early conceptualization to structured documentation. By synthesizing stakeholder discussions into clear requirements (PRDs), evaluating competitor feature sets, and exploring sustainable monetization models, I help turn early-stage concepts into validated product roadmaps."
+    },
+    {
+      id: "gaming-interactive",
+      title: "Gaming & Interactive Technology",
+      badge: "Interactive Media",
+      description: "My interest and exposure to the gaming industry have given me opportunities to explore digital entertainment, interactive experiences and gaming-related concepts.",
+      icon: "gamepad-2",
+      accent: "lime",
+      areas: [
+        "Gaming industry research",
+        "Game concept exploration",
+        "Gaming business models",
+        "Monetisation opportunities",
+        "Interactive product experiences",
+        "Gaming ecosystem research",
+        "Digital entertainment trends"
+      ],
+      detail: "Gaming is one of the most dynamic sectors for engagement and digital monetization. My focus spans studying player engagement dynamics, in-game economics, virtual economies, interactive visual storytelling, and emerging publisher ecosystems."
+    },
+    {
+      id: "emerging-xr",
+      title: "Emerging Technologies: AR/VR & Immersive",
+      badge: "Spatial Computing",
+      description: "Exploring technologies that change how people interact with digital environments and experiences.",
+      icon: "glasses",
+      accent: "cyan",
+      areas: [
+        "Augmented Reality (AR)",
+        "Virtual Reality (VR)",
+        "Mixed Reality (MR)",
+        "Immersive digital experiences",
+        "Spatial computing",
+        "Interactive experience concepts",
+        "Emerging technology applications"
+      ],
+      detail: "Tracking the evolution from 2D web interfaces to 3D spatial computing and immersive hardware ecosystems (Apple Vision Pro, Meta Quest). Analyzing how virtual spaces and spatial UX unlock high-impact applications in education, live sports, training, and entertainment."
+    }
+  ],
+
+  projects: [
+    {
+      id: "agentic-recruitment",
+      number: "01",
+      title: "Agentic Recruitment Service",
+      category: "AI | Recruitment Technology | Business Research",
+      tag: "Case Study",
+      overview: "Research and structuring of an AI-powered recruitment service designed to help organisations unlock the value of their existing candidate databases.",
+      areasOfContribution: [
+        "Researching the service concept and business applications",
+        "Studying the Indian and international competitive landscape",
+        "Analysing competitor offerings and positioning",
+        "Exploring potential revenue and pricing models",
+        "Structuring the service proposition",
+        "Developing product overview and communication material"
+      ],
+      deliverables: [
+        "Comprehensive Market Research Report",
+        "Global & Regional Competitor Analysis Matrix",
+        "Revenue & Pricing Model Evaluation",
+        "Product Concept Overview Document",
+        "Go-to-Market Service Communication Material"
+      ],
+      role: "Business Research & Service Structuring Support",
+      toolsUsed: ["AI Analysis Tools", "Market Intelligence Platforms", "Spreadsheets", "Documentation Tools"],
+      diagramNote: "Conceptual architecture illustrating candidate database ingestion, AI retrieval/matching engine, and workflow automation.",
+      statusNote: "Strategic research and proposition structuring project."
+    },
+    {
+      id: "ai-applications",
+      number: "02",
+      title: "AI Applications in Business & Recruitment",
+      category: "Artificial Intelligence | Business Applications | Research",
+      tag: "Exploratory Study",
+      overview: "Exploring practical ways AI and emerging technologies can improve business processes, particularly in recruitment and workforce operations.",
+      areasOfContribution: [
+        "Researching AI applications and tools across workforce workflows",
+        "Exploring workflow improvement and automation opportunities",
+        "Identifying high-impact AI-enabled use cases",
+        "Comparing available market solutions and capability gaps",
+        "Structuring actionable business recommendations"
+      ],
+      deliverables: [
+        "AI Use-Case Evaluation Matrix",
+        "Platform & Tool Capability Comparison",
+        "Workflow Bottleneck & Automation Roadmap",
+        "Practical Implementation Guidelines"
+      ],
+      role: "AI Research & Process Opportunity Analysis",
+      toolsUsed: ["Claude", "ChatGPT", "Workflow Research Tools", "Process Mapping"],
+      diagramNote: "Comparative breakdown of manual vs. AI-augmented operational touchpoints.",
+      statusNote: "Exploratory research and workflow optimization framework."
+    },
+    {
+      id: "product-biz-dev",
+      number: "03",
+      title: "Product & Business Development Research",
+      category: "Product Research | Business Strategy | Documentation",
+      tag: "Product Blueprint",
+      overview: "Supporting the development and structuring of business products and internal solutions through research, requirement understanding and documentation.",
+      areasOfContribution: [
+        "Understanding core business requirements and operational challenges",
+        "Researching product features and modern UX improvements",
+        "Studying operational workflows across teams",
+        "Converting discussions and feedback into structured requirements",
+        "Preparing product documentation, presentations, and recommendations"
+      ],
+      deliverables: [
+        "Product & Market Research Deck",
+        "Feature Prioritization Recommendations",
+        "Product Requirement Documentation (PRD)",
+        "Executive Business Presentations",
+        "Solution Overviews"
+      ],
+      role: "Product Research & Requirement Structuring Support",
+      toolsUsed: ["Google Workspace", "MS Office", "Product Documentation", "Figma/Visual Wireframing"],
+      diagramNote: "Structured flow: Discovery -> Synthesis -> PRD Documentation -> Executive Review.",
+      statusNote: "Collaborative research and product documentation initiative."
+    }
+  ],
+
+  approach: [
+    {
+      step: "01",
+      title: "Understand",
+      subtitle: "Context & Objectives",
+      description: "Understand the business, the core problem, the objective, and the operating context before jumping to conclusions.",
+      deliverable: "Problem Definition & Scope Alignment"
+    },
+    {
+      step: "02",
+      title: "Research",
+      subtitle: "Information Discovery",
+      description: "Explore markets, competitors, emerging tools, technological trends, and available qualitative/quantitative information.",
+      deliverable: "Landscape Mapping & Data Gathering"
+    },
+    {
+      step: "03",
+      title: "Analyse",
+      subtitle: "Pattern Recognition",
+      description: "Identify patterns, market gaps, competitive opportunities, technical bottlenecks, and potential challenges.",
+      deliverable: "Gap Analysis & Synthesis"
+    },
+    {
+      step: "04",
+      title: "Recommend",
+      subtitle: "Strategic Translation",
+      description: "Translate findings into practical insights, prioritized options, and clear, realistic business recommendations.",
+      deliverable: "Strategic Options & Feasibility Matrix"
+    },
+    {
+      step: "05",
+      title: "Structure",
+      subtitle: "Clarity & Delivery",
+      description: "Present the work through clean reports, executive presentations, structured product documents, and actionable next steps.",
+      deliverable: "Structured Documentation & Roadmaps"
+    }
+  ],
+
+  gamingMedia: [
+    {
+      id: "gm-virtualex",
+      title: "VirtualeX Academy",
+      category: "interactive",
+      attribution: "Project Reference",
+      description: "Digital education and career platform reference featuring technology education, interactive internships, and career enablement.",
+      url: "https://shrishtisoni3030.wixstudio.com/virtualexacademy",
+      externalText: "Visit Platform",
+      badge: "Platform Reference",
+      tags: ["Education", "Digital Platform", "Career Tech"]
+    },
+    {
+      id: "gm-space",
+      title: "Space Animation & Visual Effects",
+      category: "interactive",
+      attribution: "Creative Technology Exploration",
+      description: "Creative digital experience featuring space-themed animations, visual FX (Collide, Assemble, Black Hole, Meteor Shower), and the Boo! Inc. multiplayer ghost game concept with monetization model exploration.",
+      url: "https://shrishtisoni3030.wixstudio.com/my-site-12/blank-2-2-3-1-1-1?rc=test-site",
+      externalText: "Explore Experience",
+      badge: "Interactive Concept",
+      tags: ["Space FX", "Game Concept", "Creative Tech"]
+    },
+    {
+      id: "gm-apple-vision",
+      title: "NBA in 3D with Apple Vision Pro",
+      category: "spatial",
+      attribution: "External Industry Reference",
+      description: "80 Level reference exploring spatial computing, volumetric capture, and next-generation immersive sports experiences on Apple Vision Pro.",
+      url: "https://80.lv/articles/watch-nba-in-3d-with-apple-vision-pro",
+      externalText: "Read Article",
+      badge: "Spatial Computing",
+      tags: ["Apple Vision Pro", "Spatial Media", "Sports Tech"]
+    },
+    {
+      id: "gm-centipede",
+      title: "Meta Quest — Centipede VR",
+      category: "spatial",
+      attribution: "External Experience Reference",
+      description: "Meta Quest VR gaming experience reference exploring immersive gameplay mechanics, 360-degree spatial interaction, and VR player retention.",
+      url: "https://www.meta.com/en-gb/experiences/centipede-vr/26292894803687512/",
+      externalText: "View on Meta Quest",
+      badge: "VR Gaming",
+      tags: ["Meta Quest", "VR Gaming", "Spatial UX"]
+    },
+    {
+      id: "gm-mma",
+      title: "Meta Quest — MMA Cage Conquest",
+      category: "spatial",
+      attribution: "External Experience Reference",
+      description: "Meta Quest VR combat sports simulation reference highlighting real-time physics, spatial audio, and interactive combat mechanics.",
+      url: "https://www.meta.com/en-gb/experiences/mma-cage-conquest/7240758719367247/",
+      externalText: "View on Meta Quest",
+      badge: "VR Experience",
+      tags: ["Meta Quest", "Interactive VR", "Simulations"]
+    },
+    {
+      id: "yt-1",
+      youtubeId: "iw4KL33SaMs",
+      title: "Gaming & Interactive Showcase 01",
+      category: "video",
+      attribution: "Digital Video Reference",
+      description: "Interactive visual and gaming content exploring digital environment pacing and production techniques.",
+      url: "https://www.youtube.com/watch?v=iw4KL33SaMs",
+      badge: "Video Showcase",
+      tags: ["Interactive Video", "Production"]
+    },
+    {
+      id: "yt-2",
+      youtubeId: "ZpG_4BRPnqw",
+      title: "Gaming & Interactive Showcase 02",
+      category: "video",
+      attribution: "Digital Video Reference",
+      description: "Dynamic digital video exploration highlighting visual storytelling and pacing.",
+      url: "https://www.youtube.com/watch?v=ZpG_4BRPnqw",
+      badge: "Video Showcase",
+      tags: ["Motion Design", "Visual Media"]
+    },
+    {
+      id: "yt-3",
+      youtubeId: "-CBJS0dQVBs",
+      title: "Gaming & Interactive Showcase 03",
+      category: "video",
+      attribution: "Digital Video Reference",
+      description: "Digital entertainment and visual dynamics showcase.",
+      url: "https://www.youtube.com/watch?v=-CBJS0dQVBs",
+      badge: "Video Showcase",
+      tags: ["Visual Effects", "Interactive"]
+    },
+    {
+      id: "yt-4",
+      youtubeId: "ewX8MNliLkk",
+      title: "Gaming & Interactive Showcase 04",
+      category: "video",
+      attribution: "Digital Video Reference",
+      description: "Creative visual presentation exploring pacing and game aesthetic cues.",
+      url: "https://www.youtube.com/watch?v=ewX8MNliLkk",
+      badge: "Video Showcase",
+      tags: ["Game Aesthetic", "Visual Pacing"]
+    },
+    {
+      id: "yt-5",
+      youtubeId: "kiPAS8CSqFc",
+      title: "Gaming & Interactive Showcase 05",
+      category: "video",
+      attribution: "Digital Video Reference",
+      description: "Visual sequencing and interactive media reference.",
+      url: "https://www.youtube.com/watch?v=kiPAS8CSqFc",
+      badge: "Video Showcase",
+      tags: ["Interactive", "Cinematic"]
+    },
+    {
+      id: "yt-6",
+      youtubeId: "MEJkIOKLiJ8",
+      title: "Gaming & Interactive Showcase 06",
+      category: "video",
+      attribution: "Digital Video Reference",
+      description: "Digital entertainment experience reference.",
+      url: "https://www.youtube.com/watch?v=MEJkIOKLiJ8",
+      badge: "Video Showcase",
+      tags: ["Entertainment", "Media"]
+    },
+    {
+      id: "yt-7",
+      youtubeId: "F35fUtsVgzo",
+      title: "Gaming & Interactive Showcase 07",
+      category: "video",
+      attribution: "Digital Video Reference",
+      description: "Creative digital production and interactive storytelling showcase.",
+      url: "https://www.youtube.com/watch?v=F35fUtsVgzo",
+      badge: "Video Showcase",
+      tags: ["Storytelling", "Production"]
+    },
+    {
+      id: "yt-8",
+      youtubeId: "Qqi1GSEr0f8",
+      title: "Gaming & Interactive Showcase 08",
+      category: "video",
+      attribution: "Digital Video Reference",
+      description: "Digital concept and visual styling demonstration.",
+      url: "https://www.youtube.com/watch?v=Qqi1GSEr0f8",
+      badge: "Video Showcase",
+      tags: ["Digital Concept", "Styling"]
+    },
+    {
+      id: "yt-9",
+      youtubeId: "-6jtEOudg3c",
+      title: "Gaming & Interactive Showcase 09",
+      category: "video",
+      attribution: "Digital Video Reference",
+      description: "Visual dynamics and media sequencing exploration.",
+      url: "https://www.youtube.com/watch?v=-6jtEOudg3c",
+      badge: "Video Showcase",
+      tags: ["Sequencing", "Visuals"]
+    },
+    {
+      id: "yt-10",
+      youtubeId: "VOq6DCFP8-I",
+      title: "Gaming & Interactive Showcase 10",
+      category: "video",
+      attribution: "Digital Video Reference",
+      description: "Interactive visual assets and animation reference.",
+      url: "https://www.youtube.com/watch?v=VOq6DCFP8-I",
+      badge: "Video Showcase",
+      tags: ["Animation", "Assets"]
+    },
+    {
+      id: "yt-11",
+      youtubeId: "5IVeR-W79e4",
+      title: "Gaming & Interactive Showcase 11",
+      category: "video",
+      attribution: "Digital Video Reference",
+      description: "Digital game environment and character showcase.",
+      url: "https://www.youtube.com/watch?v=5IVeR-W79e4",
+      badge: "Video Showcase",
+      tags: ["Game World", "Characters"]
+    },
+    {
+      id: "yt-12",
+      youtubeId: "UF2-_PcSKz4",
+      title: "Gaming & Interactive Showcase 12",
+      category: "video",
+      attribution: "Digital Video Reference",
+      description: "Creative visual presentation and pacing showcase.",
+      url: "https://www.youtube.com/watch?v=UF2-_PcSKz4",
+      badge: "Video Showcase",
+      tags: ["Visual Design", "Creative"]
+    },
+    {
+      id: "yt-13",
+      youtubeId: "P2fypYLw4uk",
+      title: "Gaming & Interactive Showcase 13",
+      category: "video",
+      attribution: "Digital Video Reference",
+      description: "Cinematic digital sequence exploration.",
+      url: "https://youtu.be/P2fypYLw4uk",
+      badge: "Video Showcase",
+      tags: ["Cinematic", "Sequence"]
+    },
+    {
+      id: "yt-14",
+      youtubeId: "tQ-e_-NHz8w",
+      title: "Gaming & Interactive Showcase 14",
+      category: "video",
+      attribution: "Digital Video Reference",
+      description: "Visual media and interactive storytelling showcase.",
+      url: "https://youtu.be/tQ-e_-NHz8w",
+      badge: "Video Showcase",
+      tags: ["Interactive Media", "Showcase"]
+    },
+    {
+      id: "fb-1",
+      title: "Interactive Video Production Reference",
+      category: "video",
+      attribution: "External Video Reference",
+      description: "External digital video production reference hosted on Facebook Watch.",
+      url: "https://www.facebook.com/watch/?v=287961794320835",
+      externalText: "Watch on Facebook",
+      badge: "External Video",
+      tags: ["Facebook Watch", "Production"]
+    },
+    {
+      id: "li-workshop",
+      title: "AI Workshop & Continuous Learning",
+      category: "workshop",
+      attribution: "Professional Learning Activity",
+      description: "Professional learning update on advanced AI tools, generative workflows, and practical applications in business and creative workflows.",
+      url: "https://www.linkedin.com/posts/shrishtisonii_aiworkshop-be10x-artificialintelligence-share-7411022535519219712-lClN",
+      externalText: "View on LinkedIn",
+      badge: "AI Learning",
+      tags: ["AI Workshop", "be10x", "Continuous Learning"]
+    }
+  ],
+
+  tools: [
+    { name: "ChatGPT & GPT-4o", category: "AI & Reasoning", icon: "bot" },
+    { name: "Claude 3.5 Sonnet", category: "AI & Synthesis", icon: "sparkles" },
+    { name: "AI Research Tools", category: "Market Intelligence", icon: "search" },
+    { name: "Google Workspace", category: "Collaboration & Docs", icon: "file-text" },
+    { name: "Microsoft Office Suite", category: "Analysis & Models", icon: "table" },
+    { name: "Competitive Platforms", category: "Benchmarking", icon: "compass" },
+    { name: "Documentation Tools", category: "Knowledge & PRDs", icon: "layers" }
+  ],
+
+  collaboration: {
+    title: "Good ideas deserve good research.",
+    subtitle: "I collaborate with teams that build, explore, and invent.",
+    idealPartners: [
+      "Startup founders seeking market clarity & validation",
+      "Early-stage businesses exploring AI adoption",
+      "SaaS and technology companies launching new modules",
+      "Product teams needing deep feature research & PRDs",
+      "Gaming and digital entertainment businesses",
+      "Consultants, agencies & cross-disciplinary teams"
+    ],
+    supportAreas: [
+      "Market and competitor intelligence",
+      "Business opportunity & feasibility analysis",
+      "AI use-case discovery & tool evaluation",
+      "Product idea validation & feature research",
+      "Gaming industry & interactive trend analysis",
+      "Revenue & monetisation exploration",
+      "Structured documentation, PRDs & executive presentations"
+    ]
+  }
+};
+
+  /**
+ * Modal Manager - Bold Minimalist SaaS Aesthetic
+ * High contrast, deep black overlay, warm gradient accents, Swiss typography
+ */
+
+const ModalManager = {
+  activeModal: null,
+
+  open(modalId, contentRenderer) {
+    const modal = document.getElementById(modalId);
+    if (!modal) return;
+
+    if (contentRenderer) {
+      const container = modal.querySelector('.modal-content-slot');
+      if (container) {
+        container.innerHTML = contentRenderer();
+      }
+    }
+
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    this.activeModal = modal;
+
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+  },
+
+  close() {
+    if (!this.activeModal) return;
+
+    // Clear video iframes to stop background playback
+    const videoSlot = this.activeModal.querySelector('.modal-video-slot');
+    if (videoSlot) {
+      videoSlot.innerHTML = '';
+    }
+
+    this.activeModal.classList.remove('active');
+    document.body.style.overflow = '';
+    this.activeModal = null;
+  },
+
+  openCaseStudy(projectId) {
+    const project = PORTFOLIO_DATA.projects.find(p => p.id === projectId);
+    if (!project) return;
+
+    this.open('generalModal', () => `
+      <div class="p-6 sm:p-10 space-y-8 bg-[#0A0A0A] text-white">
+        <!-- Header -->
+        <div class="flex items-start justify-between gap-6 border-b border-white/10 pb-6">
+          <div>
+            <div class="flex items-center gap-3 mb-2 font-mono text-xs uppercase tracking-widest text-[#FF8C00]">
+              <span>[ PROJECT ${project.number} ]</span>
+              <span class="text-white/40">•</span>
+              <span class="text-white/70">${project.tag}</span>
+            </div>
+            <h3 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white uppercase">${project.title}</h3>
+            <p class="font-mono text-xs text-white/50 mt-1 uppercase tracking-wider">${project.category}</p>
+          </div>
+          <button onclick="ModalManager.close()" class="text-white/50 hover:text-white p-2.5 rounded-full border border-white/10 hover:border-white transition-colors" aria-label="Close modal">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <!-- Overview -->
+        <div>
+          <span class="label-mono block mb-2">[ 01 / OVERVIEW ]</span>
+          <p class="text-white/80 leading-relaxed text-base sm:text-lg">${project.overview}</p>
+        </div>
+
+        <!-- Conceptual Workflow Blueprint -->
+        <div class="p-6 rounded-lg bg-[#000000] border border-white/10 space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs uppercase tracking-widest text-[#FF8C00] flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-[#FF8C00]"></span>
+              CONCEPTUAL ARCHITECTURE & BLUEPRINT
+            </span>
+            <span class="label-mono text-[10px]">[ STRUCTURAL MODEL ]</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 my-2 text-left">
+            <div class="p-4 rounded bg-[#0A0A0A] border border-white/10">
+              <span class="font-mono text-[11px] text-[#FF8C00] block mb-1">STAGE 01</span>
+              <h5 class="font-bold text-sm text-white mb-1">Signal Discovery</h5>
+              <p class="text-xs text-white/60 leading-relaxed">Competitor landscape scanning, database ingestion, opportunity identification.</p>
+            </div>
+            <div class="p-4 rounded bg-[#0A0A0A] border border-white/10">
+              <span class="font-mono text-[11px] text-[#FF8C00] block mb-1">STAGE 02</span>
+              <h5 class="font-bold text-sm text-white mb-1">Model Synthesis</h5>
+              <p class="text-xs text-white/60 leading-relaxed">Structuring service propositions, intelligence workflows, and monetisation options.</p>
+            </div>
+            <div class="p-4 rounded bg-[#0A0A0A] border border-white/10">
+              <span class="font-mono text-[11px] text-[#FF8C00] block mb-1">STAGE 03</span>
+              <h5 class="font-bold text-sm text-white mb-1">Actionable Output</h5>
+              <p class="text-xs text-white/60 leading-relaxed">PRDs, executive review decks, and structured implementation roadmaps.</p>
+            </div>
+          </div>
+
+          <p class="font-mono text-xs text-white/40 italic">${project.diagramNote}</p>
+        </div>
+
+        <!-- Areas of Contribution -->
+        <div>
+          <span class="label-mono block mb-3">[ 02 / AREAS OF CONTRIBUTION ]</span>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            ${project.areasOfContribution.map(item => `
+              <div class="p-3.5 rounded bg-[#121212] border border-white/5 flex items-start gap-3 text-sm text-white/80">
+                <span class="text-[#FF8C00] font-mono mt-0.5">→</span>
+                <span>${item}</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <!-- Deliverables -->
+        <div>
+          <span class="label-mono block mb-3">[ 03 / DELIVERABLES ]</span>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            ${project.deliverables.map(deliv => `
+              <div class="p-3 rounded bg-[#000000] border border-white/10 flex items-center gap-2.5 text-xs font-mono text-white">
+                <i data-lucide="check" class="w-4 h-4 text-[#FF8C00] flex-shrink-0"></i>
+                <span>${deliv}</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <!-- Meta: Role & Tools -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-white/10 text-xs">
+          <div>
+            <span class="label-mono block mb-1">[ ROLE / CONTRIBUTION ]</span>
+            <span class="text-white font-medium text-sm">${project.role}</span>
+          </div>
+          <div>
+            <span class="label-mono block mb-1">[ TOOLS & METHODS ]</span>
+            <div class="flex flex-wrap gap-2 mt-1">
+              ${project.toolsUsed.map(tool => `
+                <span class="px-2.5 py-1 rounded-full bg-[#161616] border border-white/10 font-mono text-[11px] text-white/70">${tool}</span>
+              `).join('')}
+            </div>
+          </div>
+        </div>
+
+        <!-- Credibility Note -->
+        <div class="p-4 rounded bg-[#121212] border border-white/10 text-xs text-white/50 leading-relaxed font-mono">
+          <strong class="text-white">Note:</strong> ${project.statusNote} All conceptual models are analytical frameworks structured to evaluate feasibility and communicate proposition value.
+        </div>
+      </div>
+    `);
+  },
+
+  openExpertise(expertiseId) {
+    const exp = PORTFOLIO_DATA.expertise.find(e => e.id === expertiseId);
+    if (!exp) return;
+
+    this.open('generalModal', () => `
+      <div class="p-6 sm:p-10 space-y-8 bg-[#0A0A0A] text-white">
+        <!-- Header -->
+        <div class="flex items-start justify-between gap-6 border-b border-white/10 pb-6">
+          <div>
+            <span class="label-mono text-[#FF8C00] block mb-2">[ ${exp.badge} ]</span>
+            <h3 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white uppercase">${exp.title}</h3>
+          </div>
+          <button onclick="ModalManager.close()" class="text-white/50 hover:text-white p-2.5 rounded-full border border-white/10 hover:border-white transition-colors" aria-label="Close modal">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <p class="text-white/80 leading-relaxed text-base sm:text-lg">${exp.description}</p>
+
+        <!-- Scope & Approach -->
+        <div class="p-6 rounded-lg bg-[#000000] border border-white/10 space-y-2">
+          <span class="label-mono text-[#FF8C00] block">[ STRATEGIC METHODOLOGY ]</span>
+          <p class="text-sm text-white/70 leading-relaxed">${exp.detail}</p>
+        </div>
+
+        <!-- Specific Areas -->
+        <div>
+          <span class="label-mono block mb-3">[ SPECIALISED FOCUS AREAS ]</span>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            ${exp.areas.map(area => `
+              <div class="p-3.5 rounded bg-[#121212] border border-white/5 flex items-center gap-3 text-xs text-white">
+                <span class="text-[#FF8C00] font-mono">→</span>
+                <span>${area}</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <div class="pt-6 border-t border-white/10 flex justify-end">
+          <a href="#contact" onclick="ModalManager.close()" class="btn-solid-white text-xs">
+            Discuss this area →
+          </a>
+        </div>
+      </div>
+    `);
+  },
+
+  openVideo(youtubeId, title, externalUrl) {
+    this.open('generalModal', () => `
+      <div class="p-6 sm:p-8 space-y-5 bg-[#0A0A0A] text-white">
+        <div class="flex items-center justify-between border-b border-white/10 pb-4">
+          <div>
+            <span class="label-mono text-[#FF8C00] block mb-1">[ VIDEO SHOWCASE ]</span>
+            <h3 class="text-base sm:text-xl font-bold text-white uppercase tracking-tight">${title}</h3>
+          </div>
+          <button onclick="ModalManager.close()" class="text-white/50 hover:text-white p-2 rounded-full border border-white/10 hover:border-white transition-colors">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <div class="modal-video-slot video-responsive-box shadow-2xl">
+          <iframe 
+            src="https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&rel=0" 
+            title="${title}" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-3 pt-2 text-xs font-mono text-white/50">
+          <span>Direct platform link:</span>
+          <a href="${externalUrl}" target="_blank" rel="noopener noreferrer" class="btn-outline-white text-xs py-1.5 px-3">
+            Open on YouTube <i data-lucide="external-link" class="w-3.5 h-3.5 ml-1"></i>
+          </a>
+        </div>
+      </div>
+    `);
+  }
+};
+
+// Global Escape Key Listener
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    ModalManager.close();
+  }
+});
+
+  /**
+ * Main Application Script - Bold Minimalist Typography & Modern SaaS Aesthetic
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderProfileData();
+  renderAboutSection();
+  renderExpertiseSection();
+  renderProjectsSection();
+  renderApproachSection();
+  renderGamingSection('all');
+  renderToolsSection();
+  renderCollaborationSection();
+  setupNavigation();
+  setupContactForm();
+  setupFilterTabs();
+
+  if (window.lucide) {
+    lucide.createIcons();
+  }
+});
+
+// Render Hero and Profile Metadata
+function renderProfileData() {
+  const p = PORTFOLIO_DATA.profile;
+
+  const lead = document.getElementById('heroLead');
+  if (lead) lead.textContent = p.heroLead;
+
+  const profileImg = document.getElementById('heroProfileImage');
+  if (profileImg && p.image) {
+    profileImg.src = p.image;
+    profileImg.alt = `${p.name} Portrait`;
+  }
+}
+
+// Render About Narrative & Core Principles
+function renderAboutSection() {
+  const container = document.getElementById('aboutNarrative');
+  if (container) {
+    container.innerHTML = PORTFOLIO_DATA.about.paragraphs.map(para => `
+      <p class="text-white/80 leading-relaxed text-base sm:text-lg">${para}</p>
+    `).join('');
+  }
+
+  const pillarsContainer = document.getElementById('aboutPillars');
+  if (pillarsContainer) {
+    pillarsContainer.innerHTML = PORTFOLIO_DATA.about.pillars.map((pillar, idx) => `
+      <div class="editorial-card p-6 flex flex-col justify-between">
+        <span class="label-mono text-[#FF8C00] block mb-2">[ PRINCIPLE 0${idx + 1} ]</span>
+        <h4 class="text-lg font-bold text-white mb-2 uppercase">${pillar.title}</h4>
+        <p class="text-xs text-white/60 leading-relaxed">${pillar.desc}</p>
+      </div>
+    `).join('');
+  }
+}
+
+// Render 4 Bold Minimalist Expertise Cards
+function renderExpertiseSection() {
+  const container = document.getElementById('expertiseGrid');
+  if (!container) return;
+
+  container.innerHTML = PORTFOLIO_DATA.expertise.map((exp, idx) => `
+    <div class="editorial-card p-8 sm:p-10 flex flex-col justify-between group cursor-pointer" onclick="ModalManager.openExpertise('${exp.id}')">
+      <div>
+        <div class="flex items-center justify-between border-b border-white/10 pb-5 mb-6">
+          <span class="font-mono text-2xl font-extrabold text-white/30 group-hover:text-white transition-colors">0${idx + 1}</span>
+          <span class="label-mono text-[#FF8C00]">[ ${exp.badge} ]</span>
+        </div>
+
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-white uppercase tracking-tight mb-4 group-hover:text-[#FF8C00] transition-colors">
+          ${exp.title}
+        </h3>
+
+        <p class="text-sm text-white/70 leading-relaxed mb-6">
+          ${exp.description}
+        </p>
+
+        <div class="space-y-2 mb-8 border-t border-white/5 pt-4">
+          ${exp.areas.slice(0, 4).map(area => `
+            <div class="flex items-center gap-2.5 text-xs text-white/60 font-mono">
+              <span class="text-[#FF8C00]">→</span>
+              <span>${area}</span>
+            </div>
+          `).join('')}
+          ${exp.areas.length > 4 ? `
+            <p class="text-[11px] font-mono text-[#FF8C00] pt-1">+ ${exp.areas.length - 4} MORE SPECIALISED AREAS</p>
+          ` : ''}
+        </div>
+      </div>
+
+      <div class="pt-5 border-t border-white/10 flex items-center justify-between font-mono text-xs text-white group-hover:text-[#FF8C00] transition-colors">
+        <span class="uppercase tracking-wider">EXPLORE DETAILED SCOPE</span>
+        <span>→</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+// Render Selected Projects
+function renderProjectsSection() {
+  const container = document.getElementById('projectsGrid');
+  if (!container) return;
+
+  container.innerHTML = PORTFOLIO_DATA.projects.map(project => `
+    <div class="editorial-card p-8 sm:p-10 flex flex-col justify-between group">
+      <div>
+        <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
+          <span class="font-mono text-xs text-[#FF8C00]">[ CASE STUDY ${project.number} ]</span>
+          <span class="label-mono text-white/40">${project.tag}</span>
+        </div>
+
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-white uppercase tracking-tight mb-2 group-hover:text-[#FF8C00] transition-colors">
+          ${project.title}
+        </h3>
+
+        <p class="font-mono text-xs text-white/50 mb-6 uppercase tracking-wider">${project.category}</p>
+
+        <p class="text-sm text-white/70 leading-relaxed mb-6">
+          ${project.overview}
+        </p>
+
+        <div class="p-4 rounded bg-[#000000] border border-white/10 mb-6">
+          <span class="label-mono block mb-2">[ CORE CONTRIBUTIONS ]</span>
+          <ul class="space-y-1.5">
+            ${project.areasOfContribution.slice(0, 3).map(area => `
+              <li class="flex items-start gap-2 text-xs text-white/70">
+                <span class="text-[#FF8C00] font-mono">→</span>
+                <span class="line-clamp-1">${area}</span>
+              </li>
+            `).join('')}
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <div class="flex flex-wrap gap-2 mb-6">
+          ${project.deliverables.slice(0, 2).map(d => `
+            <span class="text-[11px] font-mono px-3 py-1 rounded-full bg-[#161616] border border-white/10 text-white/80">
+              ${d}
+            </span>
+          `).join('')}
+        </div>
+
+        <button onclick="ModalManager.openCaseStudy('${project.id}')" class="btn-outline-white w-full text-xs font-mono py-3 flex items-center justify-center gap-2 group-hover:border-white transition-colors">
+          <span>VIEW FULL BLUEPRINT</span>
+          <span>→</span>
+        </button>
+      </div>
+    </div>
+  `).join('');
+}
+
+// Render Gaming & Media Gallery with Category Filters
+function renderGamingSection(category = 'all') {
+  const container = document.getElementById('gamingGalleryGrid');
+  if (!container) return;
+
+  const items = category === 'all' 
+    ? PORTFOLIO_DATA.gamingMedia 
+    : PORTFOLIO_DATA.gamingMedia.filter(item => item.category === category);
+
+  container.innerHTML = items.map((item, idx) => {
+    const isVideo = item.category === 'video' && item.youtubeId;
+
+    return `
+      <div class="editorial-card p-6 flex flex-col justify-between group">
+        <div>
+          ${isVideo ? `
+            <div class="relative w-full h-44 rounded overflow-hidden mb-5 bg-[#000000] border border-white/10 cursor-pointer" onclick="ModalManager.openVideo('${item.youtubeId}', '${item.title}', '${item.url}')">
+              <img 
+                src="https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg" 
+                alt="${item.title}" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-80 group-hover:opacity-100"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition-colors">
+                <div class="w-12 h-12 rounded-full bg-white text-black flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
+                  <i data-lucide="play" class="w-5 h-5 fill-current ml-0.5"></i>
+                </div>
+              </div>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/80 font-mono text-[10px] text-white">YOUTUBE</span>
+            </div>
+          ` : `
+            <div class="p-4 rounded bg-[#000000] border border-white/10 mb-5 flex items-center justify-between">
+              <span class="label-mono text-[#FF8C00]">[ ${item.badge} ]</span>
+              <span class="font-mono text-[10px] text-white/40">REF 0${(idx % 9) + 1}</span>
+            </div>
+          `}
+
+          <h3 class="text-lg font-bold text-white uppercase tracking-tight mb-2 group-hover:text-[#FF8C00] transition-colors">
+            ${item.title}
+          </h3>
+
+          <p class="text-xs text-white/60 leading-relaxed mb-4">
+            ${item.description}
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-6">
+            ${item.tags ? item.tags.map(t => `
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-[#161616] text-white/40 border border-white/5">${t}</span>
+            `).join('') : ''}
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-white/10 flex items-center justify-between font-mono text-xs">
+          <span class="text-white/40 text-[10px]">${item.attribution}</span>
+          ${isVideo ? `
+            <button onclick="ModalManager.openVideo('${item.youtubeId}', '${item.title}', '${item.url}')" class="text-white hover:text-[#FF8C00] flex items-center gap-1 font-semibold transition-colors">
+              <span>PLAY VIDEO</span>
+              <span>→</span>
+            </button>
+          ` : `
+            <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="text-white hover:text-[#FF8C00] flex items-center gap-1 font-semibold transition-colors">
+              <span>${item.externalText || 'LAUNCH REF'}</span>
+              <span>↗</span>
+            </a>
+          `}
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  if (window.lucide) {
+    lucide.createIcons();
+  }
+}
+
+// Setup Minimalist Filter Tabs
+function setupFilterTabs() {
+  const tabs = document.querySelectorAll('.filter-pill');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const cat = tab.getAttribute('data-category');
+      renderGamingSection(cat);
+    });
+  });
+}
+
+// Render 5-Step Approach Methodology
+function renderApproachSection() {
+  const container = document.getElementById('approachSteps');
+  if (!container) return;
+
+  container.innerHTML = PORTFOLIO_DATA.approach.map(step => `
+    <div class="editorial-card p-6 flex flex-col justify-between group">
+      <div>
+        <span class="font-mono text-3xl sm:text-4xl font-extrabold text-[#FF8C00] block mb-3">${step.step}</span>
+        <h4 class="text-xl font-extrabold text-white uppercase tracking-tight mb-1 group-hover:text-[#FF8C00] transition-colors">${step.title}</h4>
+        <span class="label-mono block mb-3 text-white/40">[ ${step.subtitle} ]</span>
+        <p class="text-xs text-white/60 leading-relaxed mb-4">${step.description}</p>
+      </div>
+      <div class="pt-4 border-t border-white/10 font-mono text-[11px] text-white/80">
+        <span class="text-[#FF8C00]">OUTPUT:</span> ${step.deliverable}
+      </div>
+    </div>
+  `).join('');
+}
+
+// Render Monochromatic Tools Grid
+function renderToolsSection() {
+  const container = document.getElementById('toolsGrid');
+  if (!container) return;
+
+  container.innerHTML = PORTFOLIO_DATA.tools.map(tool => `
+    <div class="p-4 rounded-lg bg-[#0F0F0F] border border-white/10 flex items-center justify-between hover:border-white transition-colors">
+      <div>
+        <h4 class="text-sm font-bold text-white uppercase tracking-tight">${tool.name}</h4>
+        <span class="label-mono text-[10px] text-white/40 block mt-0.5">${tool.category}</span>
+      </div>
+      <span class="text-white/20 font-mono text-xs">●</span>
+    </div>
+  `).join('');
+}
+
+// Render Collaborations & Support
+function renderCollaborationSection() {
+  const partnersContainer = document.getElementById('collabPartners');
+  if (partnersContainer) {
+    partnersContainer.innerHTML = PORTFOLIO_DATA.collaboration.idealPartners.map(partner => `
+      <li class="p-3 rounded bg-[#0A0A0A] border border-white/10 flex items-center gap-3 text-sm text-white/80 font-medium">
+        <span class="text-[#FF8C00] font-mono">→</span>
+        <span>${partner}</span>
+      </li>
+    `).join('');
+  }
+
+  const supportContainer = document.getElementById('collabSupport');
+  if (supportContainer) {
+    supportContainer.innerHTML = PORTFOLIO_DATA.collaboration.supportAreas.map(area => `
+      <li class="p-3 rounded bg-[#0A0A0A] border border-white/10 flex items-center gap-3 text-sm text-white/80 font-medium">
+        <span class="text-[#FF8C00] font-mono">✓</span>
+        <span>${area}</span>
+      </li>
+    `).join('');
+  }
+}
+
+// Navigation & Mobile Drawer
+function setupNavigation() {
+  const mobileToggle = document.getElementById('mobileMenuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  if (mobileToggle && mobileMenu) {
+    mobileToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  }
+}
+
+// Copy email utility
+function copyEmailToClipboard() {
+  const email = PORTFOLIO_DATA.profile.email;
+  navigator.clipboard.writeText(email).then(() => {
+    showToastNotice(`Email copied: ${email}`);
+  }).catch(() => {
+    showToastNotice(`Direct Email: ${email}`);
+  });
+}
+
+// Toast notification
+function showToastNotice(message) {
+  let toast = document.getElementById('toastNotice');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'toastNotice';
+    toast.className = 'toast-notice';
+    document.body.appendChild(toast);
+  }
+
+  toast.innerHTML = `
+    <span class="text-[#FF8C00]">✓</span>
+    <span>${message}</span>
+  `;
+
+  toast.classList.add('show');
+  setTimeout(() => {
+    toast.classList.remove('show');
+  }, 3500);
+}
+
+// Contact Form Handler
+function setupContactForm() {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const name = form.querySelector('[name="name"]').value.trim();
+    const email = form.querySelector('[name="email"]').value.trim();
+    const projectType = form.querySelector('[name="projectType"]').value;
+    const message = form.querySelector('[name="message"]').value.trim();
+
+    if (!name || !email || !message) {
+      showToastNotice('Please fill in your name, email, and message.');
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      showToastNotice('Please enter a valid email address.');
+      return;
+    }
+
+    const mailtoSubject = encodeURIComponent(`Portfolio Inquiry: ${projectType} from ${name}`);
+    const mailtoBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nProject Type: ${projectType}\n\nMessage:\n${message}`);
+    const mailtoLink = `mailto:${PORTFOLIO_DATA.profile.email}?subject=${mailtoSubject}&body=${mailtoBody}`;
+
+    const formStatus = document.getElementById('formStatus');
+    if (formStatus) {
+      formStatus.innerHTML = `
+        <div class="p-5 rounded bg-[#0A0A0A] border border-white/20 space-y-3 font-mono">
+          <p class="text-xs text-white flex items-center gap-2">
+            <span class="text-[#FF8C00]">✓</span> Inquiry prepared successfully.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-1">
+            <a href="${mailtoLink}" class="btn-solid-white text-xs py-2 px-4">
+              LAUNCH MAIL CLIENT →
+            </a>
+            <button type="button" onclick="form.reset(); formStatus.innerHTML='';" class="btn-outline-white text-xs py-2 px-4">
+              RESET FORM
+            </button>
+          </div>
+        </div>
+      `;
+    }
+
+    showToastNotice('Inquiry ready to send!');
+  });
+}
+
+  </script>
+
+</body>
+</html>

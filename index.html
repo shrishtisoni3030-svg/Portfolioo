@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shrishti Soni — AI, Business Research & Interactive Technology</title>
+  <meta name="description" content="Personal portfolio of Shrishti Soni. Bold minimalist editorial aesthetic exploring AI research, business strategy, gaming concepts, and spatial computing.">
+  <meta name="keywords" content="Shrishti Soni, AI Research, Business Strategy, Product Research, Gaming, AR VR, Kolkata">
+  <meta name="author" content="Shrishti Soni">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shrishti Soni — AI, Business Research & Interactive Technology">
+  <meta property="og:description" content="Curious about technology. Driven by research. Interested in what businesses can build next.">
+  <meta property="og:image" content="assets/profile.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Custom Design System -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#000000] text-[#FFFFFF] antialiased min-h-screen font-display selection:bg-[#FF4500] selection:text-white">
+
+  <!-- Fixed Minimalist Header -->
+  <header class="fixed top-0 left-0 w-full z-50 header-glass">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 h-24 flex items-center justify-between">
+      
+      <!-- Brand Monogram -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <span class="font-extrabold text-xl tracking-tighter text-white group-hover:text-[#FF8C00] transition-colors">
+          SHRISHTI SONI
+        </span>
+        <span class="label-mono text-[10px] hidden sm:inline-block">[ RESEARCH & STRATEGY ]</span>
+      </a>
+
+      <!-- Desktop Minimalist Navigation -->
+      <nav class="hidden md:flex items-center gap-8 font-mono text-xs tracking-wider uppercase">
+        <a href="#about" class="text-white/60 hover:text-white transition-colors">About</a>
+        <a href="#expertise" class="text-white/60 hover:text-white transition-colors">Expertise</a>
+        <a href="#projects" class="text-white/60 hover:text-white transition-colors">Work</a>
+        <a href="#gaming" class="text-white/60 hover:text-white transition-colors">Gaming & XR</a>
+        <a href="#approach" class="text-white/60 hover:text-white transition-colors">Approach</a>
+        <a href="#contact" class="btn-solid-white py-2 px-5 text-xs">
+          Let's Talk →
+        </a>
+      </nav>
+
+      <!-- Mobile Toggle -->
+      <button id="mobileMenuToggle" class="md:hidden text-white/80 hover:text-white p-2" aria-label="Toggle Navigation">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#0A0A0A] border-b border-white/10 px-8 py-6 space-y-4 font-mono text-xs uppercase tracking-wider">
+      <a href="#about" class="block text-white/70 hover:text-white">About</a>
+      <a href="#expertise" class="block text-white/70 hover:text-white">Expertise</a>
+      <a href="#projects" class="block text-white/70 hover:text-white">Selected Work</a>
+      <a href="#gaming" class="block text-white/70 hover:text-white">Gaming & Interactive Tech</a>
+      <a href="#approach" class="block text-white/70 hover:text-white">Approach</a>
+      <a href="#contact" class="block text-[#FF8C00] font-bold">Contact & Inquiries</a>
+    </div>
+  </header>
+
+  <!-- Hero Section: Oversized Swiss Typography -->
+  <section id="hero" class="pt-40 pb-20 sm:pt-48 sm:pb-32 px-6 sm:px-10 max-w-7xl mx-auto">
+    <div class="space-y-8">
+      
+      <!-- Top Meta Line -->
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-6">
+        <div class="flex items-center gap-3">
+          <span class="w-2 h-2 rounded-full bg-[#FF8C00] animate-pulse"></span>
+          <span class="label-mono text-white/80">KOLKATA, INDIA • AVAILABLE FOR FREELANCE & COLLABORATIONS</span>
+        </div>
+        <span class="label-mono text-white/40">[ 2026 EDITION ]</span>
+      </div>
+
+      <!-- Giant Bold Headline with Warm Gradient Highlight -->
+      <div class="py-4">
+        <h1 class="title-giant text-white">
+          CURIOUS ABOUT TECHNOLOGY.<br>
+          DRIVEN BY <span class="gradient-warm-text">RESEARCH.</span>
+        </h1>
+      </div>
+
+      <!-- High-Impact Concise Lead & Actions -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end pt-4">
+        
+        <div class="lg:col-span-7 space-y-4">
+          <p class="font-mono text-xs uppercase tracking-widest text-[#FF8C00]">
+            // AI, BUSINESS RESEARCH & INTERACTIVE TECHNOLOGY
+          </p>
+          <p id="heroLead" class="text-lg sm:text-xl text-white/70 leading-relaxed font-normal max-w-2xl">
+            Exploring the intersection of AI, business strategy, and interactive worlds. I turn scattered signals and emerging technologies into structured insights and practical recommendations.
+          </p>
+        </div>
+
+        <div class="lg:col-span-5 flex flex-wrap items-center gap-4 lg:justify-end">
+          <a href="#projects" class="btn-solid-white">
+            VIEW SELECTED WORK ↓
+          </a>
+          <a href="#contact" class="btn-outline-white">
+            GET IN TOUCH →
+          </a>
+          <a href="https://www.linkedin.com/in/shrishtisonii/" target="_blank" rel="noopener noreferrer" class="p-3.5 rounded-full border border-white/20 hover:border-white text-white/70 hover:text-white transition-colors" title="LinkedIn Profile">
+            <i data-lucide="linkedin" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Kinetic Typography Marquee Ticker -->
+  <div class="marquee-container">
+    <div class="marquee-content">
+      <span class="marquee-item">AI & MARKET RESEARCH <span class="dot"></span></span>
+      <span class="marquee-item">PRODUCT STRATEGY <span class="dot"></span></span>
+      <span class="marquee-item">GAMING INDUSTRY EXPOSURE <span class="dot"></span></span>
+      <span class="marquee-item">SPATIAL COMPUTING & AR/VR <span class="dot"></span></span>
+      <span class="marquee-item">COMPETITOR INTELLIGENCE <span class="dot"></span></span>
+      <span class="marquee-item">WORKFLOW AUTOMATION <span class="dot"></span></span>
+      <span class="marquee-item">PRD & REQUIREMENTS <span class="dot"></span></span>
+      <span class="marquee-item">MONETISATION MODELS <span class="dot"></span></span>
+    </div>
+    <div class="marquee-content" aria-hidden="true">
+      <span class="marquee-item">AI & MARKET RESEARCH <span class="dot"></span></span>
+      <span class="marquee-item">PRODUCT STRATEGY <span class="dot"></span></span>
+      <span class="marquee-item">GAMING INDUSTRY EXPOSURE <span class="dot"></span></span>
+      <span class="marquee-item">SPATIAL COMPUTING & AR/VR <span class="dot"></span></span>
+      <span class="marquee-item">COMPETITOR INTELLIGENCE <span class="dot"></span></span>
+      <span class="marquee-item">WORKFLOW AUTOMATION <span class="dot"></span></span>
+      <span class="marquee-item">PRD & REQUIREMENTS <span class="dot"></span></span>
+      <span class="marquee-item">MONETISATION MODELS <span class="dot"></span></span>
+    </div>
+  </div>
+
+  <!-- About Section: Swiss Editorial Grid -->
+  <section id="about" class="py-28 sm:py-36 px-6 sm:px-10 max-w-7xl mx-auto grid-hairline-bottom">
+    <div class="space-y-12">
+      
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <span class="label-mono">[ 01 / PERSPECTIVE ]</span>
+        <span class="label-mono">HOW I THINK</span>
+      </div>
+
+      <div class="max-w-4xl">
+        <h2 class="title-section text-white">
+          A LITTLE ABOUT HOW I <span class="gradient-warm-text">THINK.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 sm:gap-16 pt-4">
+        
+        <!-- Left: Editorial Narrative -->
+        <div id="aboutNarrative" class="lg:col-span-7 space-y-6">
+          <!-- Populated from data.js -->
+        </div>
+
+        <!-- Right: 3 Core Principles -->
+        <div class="lg:col-span-5 flex flex-col justify-center">
+          <div id="aboutPillars" class="space-y-4">
+            <!-- Populated from data.js -->
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Areas of Expertise Section -->
+  <section id="expertise" class="py-28 sm:py-36 px-6 sm:px-10 max-w-7xl mx-auto grid-hairline-bottom">
+    <div class="space-y-12">
+      
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <span class="label-mono">[ 02 / CAPABILITIES ]</span>
+        <span class="label-mono">FOUR CORE PILLARS</span>
+      </div>
+
+      <div class="max-w-4xl">
+        <h2 class="title-section text-white">
+          AREAS OF <span class="gradient-warm-text">EXPERTISE.</span>
+        </h2>
+        <p class="text-white/60 text-base sm:text-lg mt-4 max-w-2xl font-normal">
+          Connecting analytical business inquiry with modern interactive media and emerging computing paradigms.
+        </p>
+      </div>
+
+      <!-- 4 High-Contrast Editorial Cards -->
+      <div id="expertiseGrid" class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 pt-4">
+        <!-- Rendered dynamically -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Selected Work (Case Studies) -->
+  <section id="projects" class="py-28 sm:py-36 px-6 sm:px-10 max-w-7xl mx-auto grid-hairline-bottom">
+    <div class="space-y-12">
+      
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <span class="label-mono">[ 03 / CASE STUDIES ]</span>
+        <span class="label-mono">BUSINESS & AI INITIATIVES</span>
+      </div>
+
+      <div class="max-w-4xl">
+        <h2 class="title-section text-white">
+          SELECTED <span class="gradient-warm-text">WORK.</span>
+        </h2>
+        <p class="text-white/60 text-base sm:text-lg mt-4 max-w-2xl font-normal">
+          Strategic research, product blueprinting, and workflow architecture supported across AI and enterprise technology.
+        </p>
+      </div>
+
+      <!-- Projects Grid -->
+      <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 pt-4">
+        <!-- Rendered dynamically -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Gaming & Interactive Technology -->
+  <section id="gaming" class="py-28 sm:py-36 px-6 sm:px-10 max-w-7xl mx-auto grid-hairline-bottom">
+    <div class="space-y-12">
+      
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <span class="label-mono">[ 04 / INTERACTIVE WORLDS ]</span>
+        <span class="label-mono">GAMING, SPATIAL & VIDEO</span>
+      </div>
+
+      <div class="max-w-4xl">
+        <h2 class="title-section text-white">
+          BEYOND BUSINESS. INTO <span class="gradient-warm-text">INTERACTIVE</span> WORLDS.
+        </h2>
+        <p class="text-white/60 text-base sm:text-lg mt-4 max-w-2xl font-normal">
+          Gaming and spatial media represent the forefront of consumer digital engagement, interactive mechanics, and virtual economies.
+        </p>
+      </div>
+
+      <!-- Minimalist Category Filter Pills -->
+      <div class="flex flex-wrap gap-2 pt-2">
+        <button class="filter-pill active" data-category="all">All References</button>
+        <button class="filter-pill" data-category="interactive">Web & Platforms</button>
+        <button class="filter-pill" data-category="spatial">Spatial & AR/VR</button>
+        <button class="filter-pill" data-category="video">Video Showcase</button>
+        <button class="filter-pill" data-category="workshop">AI Workshop</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div id="gamingGalleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
+        <!-- Rendered dynamically -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Approach Section (5-Step Methodology) -->
+  <section id="approach" class="py-28 sm:py-36 px-6 sm:px-10 max-w-7xl mx-auto grid-hairline-bottom">
+    <div class="space-y-12">
+      
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <span class="label-mono">[ 05 / METHODOLOGY ]</span>
+        <span class="label-mono">FIVE PHASES</span>
+      </div>
+
+      <div class="max-w-4xl">
+        <h2 class="title-section text-white">
+          FROM QUESTIONS TO <span class="gradient-warm-text">CLARITY.</span>
+        </h2>
+        <p class="text-white/60 text-base sm:text-lg mt-4 max-w-2xl font-normal">
+          A disciplined research and structuring workflow that converts ambiguity into validated roadmaps.
+        </p>
+      </div>
+
+      <!-- 5 Stark Columns -->
+      <div id="approachSteps" class="grid grid-cols-1 md:grid-cols-5 gap-6 pt-4">
+        <!-- Rendered dynamically -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Tools & Systems Toolkit -->
+  <section class="py-24 px-6 sm:px-10 max-w-7xl mx-auto grid-hairline-bottom">
+    <div class="space-y-10">
+      
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <span class="label-mono">[ 06 / TOOLKIT ]</span>
+        <span class="label-mono">SYSTEMS & PLATFORMS</span>
+      </div>
+
+      <div class="max-w-4xl">
+        <h2 class="title-card text-white uppercase">
+          SYSTEMS I <span class="gradient-warm-text">EXPLORE.</span>
+        </h2>
+      </div>
+
+      <div id="toolsGrid" class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <!-- Rendered dynamically -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Collaborations Section -->
+  <section class="py-28 sm:py-36 px-6 sm:px-10 max-w-7xl mx-auto grid-hairline-bottom">
+    <div class="space-y-12">
+      
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <span class="label-mono">[ 07 / PARTNERSHIPS ]</span>
+        <span class="label-mono">COLLABORATIONS</span>
+      </div>
+
+      <div class="max-w-4xl">
+        <h2 class="title-section text-white">
+          GOOD IDEAS DESERVE GOOD <span class="gradient-warm-text">RESEARCH.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 pt-4">
+        
+        <div class="editorial-card p-8 sm:p-10">
+          <span class="label-mono text-[#FF8C00] block mb-4">[ TARGET PARTNERS ]</span>
+          <h3 class="text-xl sm:text-2xl font-extrabold text-white uppercase tracking-tight mb-6">Who I Collaborate With</h3>
+          <ul id="collabPartners" class="space-y-3">
+            <!-- Rendered dynamically -->
+          </ul>
+        </div>
+
+        <div class="editorial-card p-8 sm:p-10">
+          <span class="label-mono text-[#FF8C00] block mb-4">[ SUPPORT CAPABILITIES ]</span>
+          <h3 class="text-xl sm:text-2xl font-extrabold text-white uppercase tracking-tight mb-6">Areas of Support</h3>
+          <ul id="collabSupport" class="space-y-3">
+            <!-- Rendered dynamically -->
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-28 sm:py-36 px-6 sm:px-10 max-w-7xl mx-auto">
+    <div class="space-y-12">
+      
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <span class="label-mono">[ 08 / INQUIRIES ]</span>
+        <span class="label-mono">GET IN TOUCH</span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 sm:gap-16">
+        
+        <!-- Left: Big Typography Headline & Details -->
+        <div class="lg:col-span-5 space-y-8">
+          <h2 class="title-section text-white">
+            HAVE AN IDEA WORTH <span class="gradient-warm-text">EXPLORING?</span>
+          </h2>
+          
+          <p class="text-white/70 text-base leading-relaxed">
+            Open to freelance projects, research assignments, collaborations, and exploratory discussions across AI, business strategy, and interactive technology.
+          </p>
+
+          <div class="space-y-4 pt-4 border-t border-white/10">
+            <!-- Direct Email with Copy Button -->
+            <div class="p-4 rounded bg-[#0A0A0A] border border-white/10 flex items-center justify-between">
+              <div>
+                <span class="label-mono text-[10px] block">DIRECT EMAIL</span>
+                <a href="mailto:shrishtisoni3030@gmail.com" class="text-sm font-mono text-white hover:text-[#FF8C00]">shrishtisoni3030@gmail.com</a>
+              </div>
+              <button onclick="copyEmailToClipboard()" class="btn-outline-white text-xs py-1.5 px-3">
+                COPY EMAIL
+              </button>
+            </div>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/shrishtisonii/" target="_blank" rel="noopener noreferrer" class="p-4 rounded bg-[#0A0A0A] border border-white/10 flex items-center justify-between hover:border-white transition-colors group">
+              <div>
+                <span class="label-mono text-[10px] block">NETWORK</span>
+                <span class="text-sm font-mono text-white group-hover:text-[#FF8C00]">linkedin.com/in/shrishtisonii</span>
+              </div>
+              <span class="text-white font-mono text-xs">↗</span>
+            </a>
+
+            <!-- Location -->
+            <div class="p-4 rounded bg-[#0A0A0A] border border-white/10 flex items-center justify-between">
+              <div>
+                <span class="label-mono text-[10px] block">BASE LOCATION</span>
+                <span class="text-sm font-mono text-white">KOLKATA, INDIA</span>
+              </div>
+              <span class="text-white/40 font-mono text-xs">UTC+5:30</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Minimalist Stark Form -->
+        <div class="lg:col-span-7">
+          <div class="editorial-card p-8 sm:p-12">
+            <span class="label-mono text-[#FF8C00] block mb-2">[ INQUIRY FORM ]</span>
+            <h3 class="text-2xl font-extrabold text-white uppercase tracking-tight mb-8">SEND A DIRECT MESSAGE</h3>
+
+            <form id="contactForm" class="space-y-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label class="label-mono block mb-2">YOUR NAME *</label>
+                  <input 
+                    type="text" 
+                    name="name" 
+                    required 
+                    placeholder="Alex Morgan" 
+                    class="w-full px-4 py-3.5 bg-[#000000] border border-white/20 text-white placeholder-white/30 text-sm font-mono focus:outline-none focus:border-white transition-colors"
+                  />
+                </div>
+                <div>
+                  <label class="label-mono block mb-2">YOUR EMAIL *</label>
+                  <input 
+                    type="email" 
+                    name="email" 
+                    required 
+                    placeholder="alex@company.com" 
+                    class="w-full px-4 py-3.5 bg-[#000000] border border-white/20 text-white placeholder-white/30 text-sm font-mono focus:outline-none focus:border-white transition-colors"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="label-mono block mb-2">PROJECT / INQUIRY TYPE</label>
+                <select 
+                  name="projectType" 
+                  class="w-full px-4 py-3.5 bg-[#000000] border border-white/20 text-white text-sm font-mono focus:outline-none focus:border-white transition-colors">
+                  <option value="AI & Business Research">AI & Business Research</option>
+                  <option value="Product & Requirement Research">Product & Requirement Research</option>
+                  <option value="Gaming & Interactive Concept">Gaming & Interactive Concept</option>
+                  <option value="Competitor & Market Intelligence">Competitor & Market Intelligence</option>
+                  <option value="Freelance Assignment / Collaboration">Freelance Assignment / Collaboration</option>
+                  <option value="General Conversation">General Conversation</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="label-mono block mb-2">MESSAGE / BRIEF *</label>
+                <textarea 
+                  name="message" 
+                  rows="4" 
+                  required 
+                  placeholder="Share a brief overview of your business inquiry or project..." 
+                  class="w-full px-4 py-3.5 bg-[#000000] border border-white/20 text-white placeholder-white/30 text-sm font-mono focus:outline-none focus:border-white transition-colors"></textarea>
+              </div>
+
+              <div id="formStatus"></div>
+
+              <button type="submit" class="btn-solid-white w-full py-4 text-xs font-mono tracking-wider">
+                SUBMIT INQUIRY →
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Minimalist Swiss Footer -->
+  <footer class="py-12 border-t border-white/10 bg-[#050505]">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 flex flex-col sm:flex-row items-center justify-between gap-6 font-mono text-xs">
+      <div>
+        <span class="font-bold text-white uppercase tracking-tight">SHRISHTI SONI</span>
+        <span class="text-white/40 ml-2">// PORTFOLIO 2026</span>
+      </div>
+
+      <div class="flex items-center gap-6 text-white/60">
+        <a href="#hero" class="hover:text-white">TOP ↑</a>
+        <a href="https://www.linkedin.com/in/shrishtisonii/" target="_blank" rel="noopener noreferrer" class="hover:text-white">LINKEDIN</a>
+        <a href="mailto:shrishtisoni3030@gmail.com" class="hover:text-white">EMAIL</a>
+      </div>
+
+      <div class="text-white/40">
+        © 2026 ALL RIGHTS RESERVED.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Universal Modal Overlay -->
+  <div id="generalModal" class="modal-overlay" onclick="if(event.target === this) ModalManager.close()">
+    <div class="modal-container modal-content-slot"></div>
+  </div>
+
+  <!-- Application Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
